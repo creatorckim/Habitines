@@ -270,7 +270,7 @@ const styles = StyleSheet.create({
     color: '#ffc45d',
   },
   container: {
-    backgroundColor: '#000',
+    backgroundColor: '#191B1D',
     alignItems: 'center',
     width: '100%',
     height: '100%',
@@ -283,7 +283,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Aldrich_400Regular',
   },
   habitList: {
-    width: '90%',
+    width: '100%',
     marginTop: 20,
     marginBottom: 80,
   },
@@ -307,6 +307,7 @@ const styles = StyleSheet.create({
   },
   addButton: {
     fontSize: 30,
+    color: '#191B1D',
   },
   modal: {
     justifyContent: 'flex-end',
@@ -317,7 +318,7 @@ const styles = StyleSheet.create({
     height: 100,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#ffc45d',
+    backgroundColor: '#191B1D',
     borderWidth: 2,
     borderStyle: 'solid',
     borderColor: '#000',
@@ -325,7 +326,7 @@ const styles = StyleSheet.create({
   modalText: {
     fontSize: 20,
     fontFamily: 'Aldrich_400Regular',
-    color: '#fff',
+    color: '#ffc45d',
     alignItems: 'center',
     textAlign: 'center',
 

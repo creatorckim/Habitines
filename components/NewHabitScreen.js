@@ -76,7 +76,7 @@ function NewHabitScreen({navigation}) {
   
     const borderColor = interpolatedColor.interpolate({
       inputRange: [0, 1],
-      outputRange: ['#000', '#ffc45d']
+      outputRange: ['#191B1D', '#ffc45d']
   });
     
 
@@ -110,7 +110,7 @@ function NewHabitScreen({navigation}) {
 
   const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#000',
+        backgroundColor: '#191B1D',
         alignItems: 'center',
         width: '100%',
         height: '100%',
@@ -133,7 +133,7 @@ function NewHabitScreen({navigation}) {
     },
     borderStyle: {
       borderWidth: 2,
-      borderColor: "#000",
+      borderColor: "#191B1D",
       borderRadius: 5,
       borderBottomWidth: 2,
       borderBottomColor: '#ffc45d',
@@ -150,8 +150,8 @@ function NewHabitScreen({navigation}) {
       width: '90%',
     },
     textInput: {
-        backgroundColor: '#131414',
-        width: '90%',
+        backgroundColor: '#25282A',
+        width: '100%',
         height: 80,
         padding: 20,
         fontSize: 20,
@@ -164,7 +164,7 @@ function NewHabitScreen({navigation}) {
         bottom: 0,
         width: '100%',
         height: 60,
-        backgroundColor: '#000',
+        backgroundColor: '#191B1D',
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'row',
@@ -172,10 +172,10 @@ function NewHabitScreen({navigation}) {
       button: {
         flex: 1,
         height: '100%',
-        backgroundColor: '#000',
+        backgroundColor: '#25282A',
         justifyContent: 'center',
         alignItems: 'center',
-
+        margin: 1,
       },
       buttonText: {
           color: '#ffc45d',

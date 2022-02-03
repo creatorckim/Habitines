@@ -76,7 +76,7 @@ function CalendarScreen({ navigation, route }) {
 
     const borderColor = interpolatedColor.interpolate({
         inputRange: [0, 1],
-        outputRange: ['#000', '#ffc45d']
+        outputRange: ['#191B1D', '#ffc45d']
     });
 
 
@@ -88,9 +88,6 @@ function CalendarScreen({ navigation, route }) {
             <View style={styles.container}>
                 <StatusBar style="light" />
                 <View style={styles.inputContainer}>
-                    <Animated.View style={styles.animatedView}>
-                        <Text style={styles.label}>Habit Name</Text>
-                    </Animated.View>
                     <Animated.View style={[styles.borderStyle, {borderColor: borderColor}]}>
                         <TextInput style={styles.textInput}  value={habitName} onChangeText={setHabitName} onFocus={() => setIsFocused(true)} onBlur={() => setIsFocused(false)}/>
                     </Animated.View>
@@ -111,18 +108,19 @@ function CalendarScreen({ navigation, route }) {
                     enableSwipeMonths={true}
                     markedDates={ableDays}
                     theme={{
-                        backgroundColor: '#000',
-                        calendarBackground: '#000',
+                        backgroundColor: '#191B1D',
+                        calendarBackground: '#191B1D',
                         arrowColor: '#ffc45d',
                         textSectionTitleColor: '#ffc45d',
                         monthTextColor: '#ffc45d',
-                        selectedDayTextColor: '#000',
+                        selectedDayTextColor: '#191B1D',
                         dayTextColor: '#fff',
                         todayTextColor: '#ffc45d',
                         textDisabledColor: '#808080',
                     }}
                     style={{
                         width: '100%',
+                        marginTop: 60,
                         textDayFontFamily: 'Aldrich_400Regular',
                         textMonthFontFamily: 'Aldrich_400Regular',
                         textDayHeaderFontFamily: 'Aldrich_400Regular',
@@ -163,13 +161,13 @@ const styles = StyleSheet.create({
         borderBottomColor: '#ffc45d',
         backgroundColor: '#131414',
         width: '90%',
-        marginTop: 50,
+        marginTop: 100,
         fontFamily: 'Aldrich_400Regular',
     },
 
     textInput: {
-        backgroundColor: '#131414',
-        width: '90%',
+        backgroundColor: '#25282A',
+        width: '100%',
         height: 80,
         padding: 20,
         fontSize: 20,
@@ -179,7 +177,7 @@ const styles = StyleSheet.create({
     container: {
         width: '100%',
         height: '100%',
-        backgroundColor: '#000',
+        backgroundColor: '#191B1D',
     },
     actionBarContainer: {
         flex: 1,
@@ -190,13 +188,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         flexDirection: 'row',
+        backgroundColor: '#191B1D',
       },
       button: {
         flex: 1,
         height: '100%',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#000',
+        backgroundColor: '#25282A',
+        margin: 1,
       },
       buttonText: {
           color: '#ffc45d',

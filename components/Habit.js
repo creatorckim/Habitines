@@ -37,7 +37,7 @@ let [fontsLoaded] = useFonts({
                     <Text style={styles.habitName}>
                         {props.obj.name}
                     </Text>
-                    <View style={{backgroundColor: dayPressed === true ? '#ffc45d' : '#000', width: 20, height: 20, borderColor: '#ffc45d', borderWidth: 2, borderRadius: 5,}}></View>
+                    <View style={{backgroundColor: dayPressed === true ? '#ffc45d' : '#191B1D', width: 20, height: 20, borderColor: '#ffc45d', borderWidth: 2, borderRadius: 5,}}></View>
                 </TouchableOpacity>
             </View>
         )
@@ -46,12 +46,12 @@ let [fontsLoaded] = useFonts({
 
 const styles = StyleSheet.create({
     habitItem: {
-        backgroundColor: '#131414',
-        padding: 15,
+        backgroundColor: '#25282A',
+        padding: 25,
         borderRadius: 5,
         width: '100%',
-        marginVertical: 5,
-        borderWidth: 2,
+        marginVertical: 1.5,
+        borderLeftWidth: 5,
         borderStyle: 'solid',
         borderColor: '#ffc45d',
         flexDirection: 'row',
